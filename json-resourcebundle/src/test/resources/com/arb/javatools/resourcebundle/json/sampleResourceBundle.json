@@ -1,0 +1,28 @@
+{
+  "@@x-base-bundle": true,
+  "@@locale": "en-GB",
+  "key1": "Climate change",
+  "@key1": {
+    "description": "Description of the text for the key, key1.",
+    "x-guid": "809cd86d-c240-4e1d-8528-10f506d3f280",
+    "x-access": "public"
+  },
+  "key2": "Global warming and climate change",
+  "@key2": {
+    "description": "Description of the text for the key, key2.",
+    "x-guid": "8137ccc7-ced6-4fd6-aebc-613802ab326c",
+    "x-access": "private"
+  },
+  "dotty.key.allowed": "Scientific evidence for warming of the climate system is unequivocal",
+  "@dotty.key.allowed": {
+    "description": "IPCC, Intergovernmental Panel on Climate Change quote.",
+    "x-guid": "d555178a-03af-4847-b412-9728da9c168d",
+    "x-access": "public"
+  },
+  "plural1": "{gender_of_host, select, female {{num_guests, plural, offset: 1 =0 {{host} does not give a party.} =1 {{host} invites {guest} to her party.} =2 {{host} invites {guest} and one other person to her party.} other {{host} invites {guest} and # other people to her party.}}} male {{num_guests, plural, offset: 1 =0 {{host} does not give a party.} =1 {{host} invites {guest} to his party.} =2 {{host} invites {guest} and one other person to his party.} other {{host} invites {guest} and # other people to his party.}}} other {{num_guests, plural, offset: 1 =0 {{host} does not give a party.} =1 {{host} invites {guest} to their party.} =2 {{host} invites {guest} and one other person to their party.} other {{host} invites {guest} and # other people to their party.}}}}",
+  "@plural1": {
+    "description": "Standard icu message format plural example",
+    "x-guid": "6290ac2c-9ad3-4184-bc14-31560728bbb6",
+    "x-access": "public"
+  }
+}

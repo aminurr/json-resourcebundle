@@ -43,6 +43,6 @@ Problem is in step 3. To create a new JsonBundle, we will have to parse Json fil
 
 ##### Instructions
 1. build project json-resourcebundle-ext and put the jar in the default ext dir or keep a note of folder where you have placed the jar.
-2. Run the test in json-resourcebundle by specifying -Djava.ext.dir=<path_where_jar_created_in_1_above>.
+2. Run the test in json-resourcebundle by specifying `-Djava.ext.dir=<path_where_jar_created_in_1_above>`.
 3. For netbeans user, there exists nbactions.xml in json-resourcebundle. Define env variable `USER_LOCAL_REPOSITORY` to point to your local maven repository and things shall work
 

@@ -21,7 +21,7 @@ ResourceBundle myResources =
 
 The API supports `java|properties` bundle by default. And java also provides way to control other bundles. e.g `json` or [`xliff`](https://docs.oasis-open.org/xliff/v1.2/xliff-profile-java/xliff-profile-java-v1.2-cd02.html).
 
-A very well documented tutorial to register own [`ResourceBundle.Control`](https://docs.oracle.com/javase/8/docs/api/java/util/ResourceBundle.Control.html) and to take over discovery and creation of bundle is exist [here](https://docs.oracle.com/javase/tutorial/i18n/serviceproviders/resourcebundlecontrolprovider.html).
+A very well documented tutorial to register own [`ResourceBundle.Control`](https://docs.oracle.com/javase/8/docs/api/java/util/ResourceBundle.Control.html) and to take over discovery and creation of bundle exist [here](https://docs.oracle.com/javase/tutorial/i18n/serviceproviders/resourcebundlecontrolprovider.html).
 
 However the problem I faced with this approach is that to register the `ResourceBundle.Control` the `SPI` implementation jar has to be in `java.ext.dir` dir. To quote the [tutorial](https://docs.oracle.com/javase/tutorial/i18n/serviceproviders/resourcebundlecontrolprovider.html#run-rbcptest):
 >When you install a Java extension, you typically put the JAR file of the extension in the lib/ext directory of your JRE. However, this command specifies the directory that contains Java extensions with the system property `java.ext.dirs`.

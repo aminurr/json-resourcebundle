@@ -40,3 +40,9 @@ So far so good. Steps are :
 ### :no_entry_sign: *Problem*
 
 Problem is in step 3. To create a new JsonBundle, we will have to parse Json file. Most of the JSON Parser (GSON/Jackson/..) are third party libary and this approach will force those 3rd party libraries to be present in ext folder. Reason for this is the ext/dir is loaded using `extension classloader` unlike your system classloader. And hence the depdendent API for parsing JSON has to be there in extension directory. I tried to solve it using another SPI that provides parsed bundle.
+
+##### Instructions
+1. build project json-resourcebundle-ext and put the jar in the default ext dir or keep a note of folder where you have placed the jar.
+2. Run the test in json-resourcebundle by specifying -Djava.ext.dir=<path_where_jar_created_in_1_above>.
+3. For netbeans user, there exists nbactions.xml in json-resourcebundle. Define env variable `USER_LOCAL_REPOSITORY` to point to your local maven repository and things shall work
+
